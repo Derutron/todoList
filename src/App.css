@@ -1,0 +1,29 @@
+.main{
+  min-height: 100vh;
+}
+
+.header{
+  height: 13rem;
+  background-image: url(./image/bg-mobile-light.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.header p{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 40px 0 0 20px;
+  letter-spacing: 4px;
+}
+
+.header img {
+  width: 20px;
+  height: 20px;
+  margin: 50px 20px 0 0;
+ 
+} 
+
