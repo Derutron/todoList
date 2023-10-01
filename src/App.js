@@ -38,6 +38,12 @@ function App() {
     )
   }
 
+  //Function to clear all completed todo list
+  const clearCompletedTodos = () => {
+    const todoItems = todoList.filter(todo => !todo.status);
+    setTodoList(todoItems);
+  }
+
   return (
     <div className="min-h-screen bg-[#2f2f2] 1g:w-[60%] lg:mx-auto">
       <div className="h-52 px-5 pt-10 bg-no-repeat bg-cover bg-[url('./image/bg-mobile-light.jpg')]">
@@ -56,7 +62,7 @@ function App() {
         key={item.id} />)}
         <div className='flex justify-between px-5 items-center h-14'>
           <p>4 items</p>
-          <button type='button'>Clear Completed</button>
+          <button onClick={clearCompletedTodos} type='button'>Clear Completed</button>
         </div>
       </div>
     </div>
