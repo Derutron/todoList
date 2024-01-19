@@ -1,0 +1,9 @@
+@media (max-width: 640px) {
+    .form,
+    .result {
+      /* Add your custom styles for a 320px screen here */
+      margin-left: 40px;
+      margin-right: 40px;
+      /* etc. */
+    }
+  }
